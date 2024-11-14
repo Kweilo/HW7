@@ -10,16 +10,15 @@ public class Main {
             System.out.println("Месяц " + i + " Итого " + total);
         }
         //Задание 2
-        int start = 10;
-        while (start > 0) {
-            System.out.print(start + " ");
-            start = start - 1;
-        }
         System.out.println();
-        start = 1;
+        int start = 1;
         while (start < 11) {
             System.out.print(start + " ");
             start = start + 1;
+        }
+        System.out.println(" ");
+        for (start = 10; start > 0; start--) {
+            System.out.print(start + " ");
         }
         //Задача 3
         int Y = 12000000;
@@ -42,6 +41,8 @@ public class Main {
             total2 += salary2 + percent;
             System.out.println("Месяц " + month + " Итого " + total2);
         }
+        System.out.println("Заняло месяцев " + month + " Итоговая сумма " + total2);
+
         //Задача 5
         salary2 = 15000;
         total2 = 0;
@@ -66,11 +67,12 @@ public class Main {
         }
         //Задача 7
         int days = 31;
-        for (int friday = 1; friday < days; friday += 7) {
+        int first = 1; //Первое ноября 2024, пятница 1 число
+        for (int friday = first; friday < days; friday += 7) {
             System.out.println("Сегодня пятница " + friday + " число. Необходимо подготовить отчет");
         }
         //Задача 8
-        yearNow = 2024;
+        int yearNow2 = 2024;
         for (int years = 0; years < yearNow + 100; years += 79) {
             if (years > yearNow - 200) {
                 System.out.println("Комета пролетит в " + years + " году");
